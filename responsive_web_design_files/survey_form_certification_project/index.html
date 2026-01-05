@@ -2,25 +2,52 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Survey Form</title>
+    <title>Internet Provider Survey Form</title>
   </head>
 
   <body>
     <h1 id="title">
-      Survey Form
+      Internet Provider Survey Form
     </h1>
     <p id="description">
       Please fill out this form. Your input is invaluable and will help us improve our platform.
     </p>
     <form id="survey-form">
-      <label for="name-label">
+      <label id="name-label">
         Full name:
       </label>
-      <input id="name" type="text" required><br>
-      <label for="email-label">Email address:</label>
-      <input id="email" type="email" required><br>
-      <label for="number-label">Age: </label>
-      <input id="number" type="number" min="0" max="200"><br>
+      <input id="name" type="text" placeholder="e.g., John Doe" required><br>
+      <label id="email-label">Email address:</label>
+      <input id="email" type="email" placeholder="e.g., example@example.com" required><br>
+      <label id="number-label">Age: </label>
+      <input id="number" type="number" min="0" max="200" placeholder="e.g., 18"><br><br>
+      <label for="dropdown">Which option best describes your satisfaction level with your current internet provider?</label>
+      <select id="dropdown">
+        <option value="very-unsatisfied">Very Unsatisfied</option>
+        <option value="unsatisfied">Unsatisfied</option>
+        <option value="neutral">Neutral</option>
+        <option value="satisfied">Satisfied</option>
+        <option value="very-satisfied" selected>Very satisfied</option>
+      </select><br><br>
+      <label>
+        Would you be willing to switch your provider?
+      </label><br><br>
+      <input type="radio" id="yes" name="response" value="Yes">
+      <label for="yes">Yes</label>
+      <input type="radio" id="no" name="response" value="No">
+      <label for="no">No</label>
+      <input type="radio" id="maybe" name="response" value="Maybe">
+      <label for="maybe">Maybe</label><br><br>
+      <label>Please select the internet providers you have heard of (Check all that apply):</label><br>
+      <input type="checkbox" id="provider1" name="provider1" value="Eir">
+  <label for="provider1">Eir</label><br>
+  <input type="checkbox" id="provider2" name="provider2" value="Three">
+  <label for="provider2">Three</label><br>
+  <input type="checkbox" id="provider3" name="provider3" value="Vodafone">
+  <label for="provider3">Vodafone</label><br><br>
+  <label for="comments">Do you have any further comments regarding your current internet provider?</label><br>
+  <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br>
+  <button id="submit">Submit</button>
     </form>
   </body>
 </html>
