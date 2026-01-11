@@ -1,0 +1,52 @@
+body {
+  background-image: linear-gradient(to right, green, white, orange);
+  font-family: Arial, sans-serif;
+}
+
+.blog-post-card {
+  background-color: white;
+  border-radius: 20px;
+  text-align: center;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.post-img {
+  border-radius: 20px 20px 0 0;
+  border-bottom: 5px solid #555;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.post-content {
+    padding: 20px;
+}
+
+.post-title {
+  color: darkgreen;
+  margin: 10px;
+  padding: 10px;
+}
+
+.post-excerpt {
+  color: darkslategrey;
+  margin: 10px;
+  padding: 10px;
+}
+
+.read-more {
+  display: inline-block;
+  background-color: darkgreen;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.read-more:hover {
+  background-color: darkorange;
+}
