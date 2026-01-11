@@ -1,0 +1,56 @@
+body {
+  background-color: ivory;
+  font-family: Arial, sans-serif;
+}
+
+.todo-card {
+  width: 400px;
+  background-color: rgba(104, 207, 203, 0.75);
+  border-style: double;
+  padding: 20px;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+}
+
+.todo-card h1 {
+  text-align: center;
+  font-family: Impact, sans-serif;
+  color: navy;
+}
+.todo-list {
+  border-style: solid;
+  background-color: azure;
+  padding: 10px;
+}
+
+.todo-list > li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: blue;
+}
+
+a:visited {
+  color: purple;
+}
+
+a:hover {
+  color: green;
+}
+
+a:focus {
+  color: orange;
+  outline: 2px dotted;
+   outline-offset:1px;
+} 
+
+a:active {
+  color: red;
+}
