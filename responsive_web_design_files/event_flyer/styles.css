@@ -1,0 +1,38 @@
+body {
+    background-color: ivory;
+  padding: 50px 0;
+  margin: 0 auto;
+  width: 50vw;
+  min-height: calc(100vh - 100px);
+  text-align: center;
+}
+
+
+
+hr, section {
+  width: 90%;
+}
+
+hr {
+    color:black;
+    background-color :black;
+    height: 2px;
+}
+
+.parallel-lists {
+  display: flex;
+  justify-content: space-between;
+}
+
+li {
+    text-align: left;
+}
+
+img {
+    display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 90%;
+  margin: 20px auto;
+}
