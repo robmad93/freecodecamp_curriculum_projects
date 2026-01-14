@@ -1,0 +1,83 @@
+body {
+  background-color: darkgrey;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 80%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 2px solid;
+  border-radius: 5px;
+  background-color: ivory;
+  box-shadow: 4px 4px black;
+}
+
+
+h1 {
+  text-align: center;
+}
+input:focus,  textarea:focus {
+border: 1px solid black;
+}
+
+label {
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+input,
+select,
+textarea, fieldset {
+  width: 95%;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding: 6px;
+}
+
+input, select, textarea, button, fieldset {
+  display: block;
+  border-radius: 4px;
+}
+
+input:invalid, select:invalid, textarea:invalid {
+  border-color: red;
+}
+
+input:valid, select:valid, textarea:valid {
+border-color: green;
+}
+
+button {
+  background-color: midnightblue;
+  color: whitesmoke;
+  padding: 5px;
+  margin: 20px auto;
+}
+
+button:hover {
+background-color: darkgreen;
+color: whitesmoke;
+transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.radio-group {
+  margin-top: 15px;
+  padding: 10px;
+}
+
+.radio-group input,
+.radio-group label {
+  display: inline-block;
+  width: auto;
+  margin-right: 10px;
+}
+
+.radio-group input[type="radio"]:checked + label {
+  color: green;
+  font-weight: bold;
+  text-decoration: underline;
+}
