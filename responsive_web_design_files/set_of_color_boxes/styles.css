@@ -1,0 +1,44 @@
+body {
+  background-color: #f4f4f4;
+  text-align: center;
+}
+h1 {
+    font: italic bold 60px Arial, sans-serif;
+    color: rgb(65, 35, 45);
+    max-width: 900px;
+    margin: 20px auto;
+  text-decoration: underline  rgb(65, 35, 45) 10px;
+  background-color: rgba(230,200, 200, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px 5px rgba(50,50, 50, 0.5)
+  
+}
+.color-box {
+  display: inline-block;
+  margin: 20px;
+  width: 150px;
+  height: 150px;
+  max-width: 20vw;
+  max-height: 20vw;
+}
+
+.color1 {
+  background-color: #88AB55;
+}
+
+.color2 {
+  background-color: rgb(255, 66, 99);
+}
+
+.color3 {
+  background-color: indigo;
+}
+
+.color4 {
+  background-color: hsl(200, 75%, 50%);
+}
+
+.color5 {
+  background-color: rgba(230, 155, 77, 0.8);
+}
