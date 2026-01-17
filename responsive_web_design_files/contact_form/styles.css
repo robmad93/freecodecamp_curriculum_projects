@@ -1,0 +1,47 @@
+body {
+  background-image: linear-gradient(to right, rgba(245, 67, 70, 0.8), rgba(255, 100, 100, 0.7), rgba(255, 140, 140, 0.5));
+  font-family: Arial, sans-serif;
+}
+
+.form-container {
+  width: 50vw;
+  max-width: 400px;
+  min-width: 100px;
+  text-align: center;
+  background-color: ivory;
+  margin: 20px auto;
+  border-radius: 10px;
+  padding: 20px 10px;
+  box-shadow: 0 5px 15px black;  
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+  font-size: 1.2rem;
+  color: rgb(20, 20, 20);
+}
+
+input, textarea {
+  width: 80%;
+  margin: 5px auto;
+  padding: 5px;
+}
+
+button {
+  font-size: 1.2rem;
+  padding: 5px;
+  width: 20%;
+  min-width: 80px;
+  border-radius: 5px;
+  background-color: rgb(33, 100, 230);
+  color: #fefefe;
+  
+}
+
+button:hover {
+  background-color: rgb(44, 135, 30);
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
