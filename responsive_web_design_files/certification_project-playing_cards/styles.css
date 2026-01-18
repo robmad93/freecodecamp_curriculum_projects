@@ -1,0 +1,107 @@
+/* Note: There are issues when centering the symbols for cards of power 4 and higher. May need to revise center symbol styles to fix this. */
+
+* {
+    box-sizing: content-box;
+}
+
+body {
+  font-family: Garamond, sans-serif;
+  background-color: rgba(56,120,78, 0.8);
+}
+
+p {
+    font-weight: bold;
+    font-size: 35px;
+    margin: 0;
+}
+
+.power, .power-inverted {
+margin: 0 3px;
+}
+
+.power-inverted {
+    font-weight: bold;
+    font-size: 35px;
+    margin: 0 3px;
+    transform: rotate(180deg);
+}
+
+#playing-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px auto;
+  gap: 20px;
+}
+
+.card {
+  width: 300px;
+  height: 420px;
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: rgb(255,255,255);
+  box-shadow: 4px 4px 5px black;
+  padding: 10px;
+}
+
+.black-card {
+    color: black;
+}
+
+.red-card {
+    color: red;
+}
+
+.suit-corner {
+    font-size: 40px;
+    margin: 0;
+}
+
+.suit-corner-inverted {
+    font-size: 40px;
+    margin: 0;
+    transform: rotate(180deg);
+}
+
+.suit-center {
+    font-size: 80px;
+}
+
+.suit-center-inverted {
+    font-size: 80px;
+    transform: rotate(180deg);
+}
+
+.left {
+  align-self: flex-start;
+}
+
+
+.middle {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.row.single {
+  gap: 0;
+}
+
+
+
+.row.single {
+  gap: 0;
+}
+
+.right {
+  align-self: flex-end;
+}
+
