@@ -24,12 +24,12 @@ body {
 
 #confidential {
   color: red;
-  transform: rotate(-20deg);
+  transform: rotate(-20deg) translate(120px, 50px);
 }
 
 #top-secret {
   color: red;
-  transform: rotate(15deg);
+  transform: rotate(15deg) translate(45px, -17px);
 }
 
 .blurred {

@@ -1,0 +1,90 @@
+* {
+    box-sizing: content-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+.pricing-container {
+  width: 80%;
+  height: auto;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+  border: solid 2px black;
+  padding: 20px 10px;
+  min-width: 250px;
+  max-width: 900px;
+  background-color:rgba(250, 200, 200, 0.2);
+  border-radius: 8px;
+}
+
+.pricing-card {
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 0 0 200px;
+  margin: 30px;
+  background-color:white;
+  transition: all .3s;
+  border-radius: 8px;
+  box-shadow: 4px 4px 5px darkgrey;
+}
+
+.pricing-card:hover {
+    transform: scale(1.1);
+}
+
+li {
+    text-align: left;
+}
+
+.basic-plan {
+  order: 0;
+}
+
+.pro-plan {
+  order: 1;
+  flex-grow: 2;
+}
+
+.premium-plan {
+  order: 2;
+}
+
+button {
+    cursor: pointer;
+    margin: 10px auto;
+    padding: 10px 20px;;
+    background-color: rgba(255, 230,110, 0.8);
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+
+/* Custom bullet points */
+.tick-item, .cross-item {
+  list-style: none; 
+  padding-left: 20px;
+}
+
+.tick-item::before {
+  content: '✓'; 
+  color: green;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.cross-item::before {
+  content: '✗';
+  color: red;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
