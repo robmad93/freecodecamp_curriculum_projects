@@ -1,0 +1,78 @@
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    margin: 0;
+    background: linear-gradient(to bottom, lightgreen 75%, green);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+}
+
+#sky {
+  position: absolute;
+  background: linear-gradient(to bottom, rgb(0, 99, 248), rgb(191, 229, 241));
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 50%;
+  width: 100%;
+  z-index: -1;
+}
+
+
+#house {
+  position: relative;
+  margin: auto;
+  top: 250px;
+  left: 80px;
+  width: 500px;
+  height: 400px;
+  background-color: rgb(161, 73, 73);
+  border: solid 8px rgb(100, 20, 20);
+  border-top: none;
+}
+
+#house div {
+  position: absolute;
+}
+
+#roof {
+  top: 0;
+  left: -7px;
+  width: 100%;
+  height: 115px;
+  background-color: rgb(60, 60, 60);
+  border: solid 8px rgb(60, 60, 60);
+}
+
+#chimney {position: absolute; top: -100px; left: 15%; width: 80px; height: 100px; border: 2px solid black; z-index: -1; background: repeating-linear-gradient(#e6e6e6, #e6e6e6 10%, black 10%, black 12%); }
+
+
+#window-1 {
+  top: 40%;
+  left: 25px;
+  width: 100px;
+  height: 150px;
+  border: solid 8px rgb(100, 20, 20); 
+  background-color: rgb(220, 197, 66);
+}
+
+#window-2 {
+  top: 40%;
+  left: 355px;
+  width: 100px;
+  height: 150px;
+  border: solid 8px rgb(100, 20, 20); 
+  background-color: rgb(220, 197, 66);
+}
+
+#door {
+  bottom: 0;
+  left: 190px;
+  width: 100px;
+  height: 200px;
+  border: solid 8px rgb(100, 20, 20);
+  background-color: rgb(53, 12, 12);
+}
+
