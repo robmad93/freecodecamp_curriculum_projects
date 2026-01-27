@@ -1,3 +1,66 @@
+body {
+  font-size: 16px;
+}
+
 .newspaper-layout {
-  
+  display: grid;
+  grid-template-areas: "title title title"
+  "feature-article feature-article cover-image"
+    "secondary-article secondary-article cover-image"
+    "small-article1 small-article2 small-article3";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto 1fr 1fr 1fr;
+
+  gap: 1rem;
+}
+
+article {
+  background-color: rgb(240, 240, 240);
+  padding: 0.5rem;
+  border-radius: 6px;
+}
+
+.title {
+  grid-area: title;
+  color: white;
+  background: linear-gradient(to right, yellow, blue, yellow);
+  text-align: center;
+  font-family:  'Anton', sans-serif;
+}
+
+.feature-article {
+  grid-area: feature-article;
+}
+
+h2, h3 {
+  font-family: 'Raleway', sans-serif;
+}
+
+p {
+  font-family: 'Baskervville', serif;
+}
+
+.cover-image {
+  grid-area: cover-image;
+}
+
+.secondary-article {
+  grid-area: secondary-article;
+}
+
+.small-article1 {
+  grid-area: small-article1;
+}
+
+.small-article2 {
+  grid-area: small-article2;
+}
+
+.small-article3 {
+  grid-area: small-article3;
+}
+
+.cover-image img {
+  max-width: 100%;
+  border-radius: 6px;
 }
