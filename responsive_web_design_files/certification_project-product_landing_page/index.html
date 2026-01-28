@@ -8,18 +8,101 @@
 
   <body>
     <header id="header">
-      /* Add logo and creating working nav-links */
-      <img src="insert logo here" id="header-img" />
+      <img
+        src="https://media.istockphoto.com/id/1516880239/vector/violin-logo-icon-design.jpg?s=612x612&w=0&k=20&c=3RmRfElxzr8eErsrwsD_Le_dBz6BxoNWP_Hnk6Bqdac="
+        alt="Company logo showing an artistic depiction of a violin"
+        id="header-img"
+      />
+      <div id="site-name">Fiddler's Fancy</div>
       <nav id="nav-bar">
-        <a class="nav-link">insert text here</a>
-        <a class="nav-link">insert text here</a>
-        <a class="nav-link">insert text here</a>
+        <a class="nav-link" href="#main-features">Features</a>
+        <a class="nav-link" href="#form">Newsletter</a>
+        <a class="nav-link" href="#product-container">Pricing</a>
       </nav>
-      /* Add embedded product video */
-      <video id="video"></video>
     </header>
-    <form id="form">
-      <input id="email" type="email" placeholder="E.g., johndoe@example.com" />
+    <!-- Add feature icons -->
+    <section id="main-features">
+      <img class="feature-image" />
+      <h2 class="feature-heading">Premium Materials</h2>
+      <p class="feature-text">
+        Our violins are masterfully crafted using only the finest natural
+        materials, ensuring yours is the sweetwest sounding fiddle in every
+        session!
+      </p>
+      <h2 class="feature-heading">Master Craftspeople</h2>
+      <p class="feature-text">
+        Our elite team of craftspeople each have a minimum of 15 years
+        experience crafting violins, with 120 years of collective experience
+        across our team of seven members! With us, you are in safe hands.
+      </p>
+      <h2 class="feature-heading">Fast Delivery</h2>
+      <p class="feature-text">
+        Once your order has been prepared, we ensure it is delivered as quickly
+        as possible, trusting only quality-assured couriers. We also provide
+        free returns if you are unsatisfied with your order.
+      </p>
+    </section>
+    <!-- Adjust video -->
+    <iframe
+      id="video"
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/URKiYAvHX6I?si=eRU49glr650szRKH"
+      title="YouTube video player"
+      frameborder="0"
+      allow="
+        accelerometer;
+        autoplay;
+        clipboard-write;
+        encrypted-media;
+        gyroscope;
+        picture-in-picture;
+        web-share;
+      "
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+    <form id="form" action="https://www.freecodecamp.org/email-submit">
+      <label for="email">Want to subscribe to our weekly newsletter?</label>
+      <input
+        id="email"
+        type="email"
+        placeholder="Enter your email address"
+        name="email"
+      />
+      <input type="submit" id="submit" value="Submit" />
     </form>
+    <section id="product-container">
+      <div class="product-card">
+        <h3>Student Violin</h3>
+        <ul>
+          <li>Great for beginners</li>
+          <li>Fantastic sound quality</li>
+          <li>Made using traditional woods</li>
+        </ul>
+      </div>
+      <div class="product-card">
+        <h3>Advanced Violin</h3>
+        <ul>
+          <li>Ideal for more advanced fiddlers</li>
+          <li>Excellent sound quality</li>
+          <li>Made using higher quality traditional woods</li>
+        </ul>
+      </div>
+      <div class="product-card">
+        <h3>Professional Violin</h3>
+        <ul>
+          <li>Perfect for semi-professional and professionals</li>
+          <li>Unmatched sound quality</li>
+          <li>Made using only the highest quality traditional woods</li>
+        </ul>
+      </div>
+    </section>
+    <!-- Add footer section -->
+    <footer>
+      <a></a>
+      <a></a>
+      <a></a>
+    </footer>
   </body>
 </html>

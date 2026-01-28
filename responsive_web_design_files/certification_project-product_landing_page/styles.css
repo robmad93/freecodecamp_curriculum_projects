@@ -1,0 +1,44 @@
+body {
+  font-size: 16px;
+}
+
+#header {
+display: flex;
+flex-wrap: nowrap;
+align-items: center;
+position: sticky;
+top: 0;
+background: white; /* important so content doesn’t show through */
+z-index: 1000;
+}
+
+
+#header-img {
+  max-width: 100px;
+}
+
+#site-name {
+  font-family: Cambria, Georgia, serif;
+}
+
+#nav-bar {
+  margin-left: auto;
+  
+}
+
+.nav-link {
+  padding: 10px;
+}
+
+@media only screen and (max-width: 550px) {
+  .hero-title {
+    font-size: 6rem;
+  }
+  
+  .hero-subtitle,
+  .author,
+  .quote,
+  .list-title {
+    font-size: 1.8rem;
+  }
+}
