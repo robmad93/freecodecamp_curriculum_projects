@@ -79,16 +79,14 @@ body {
 #contact-section {
   background-color: var(--general-theme-color);
   display: grid;
-  grid-template-areas: "heading heading heading"
-  "question question question"
-  "linkedin github email";
-  text-align: center;
+  grid-template-areas:
+    "heading heading heading"
+    "question question question"
+    "methods methods methods";
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto auto 1fr;
-  #contact-section {
+  text-align: center;
   justify-items: center;
   align-items: center;
-}
 }
 
 #contact-section h2 {
@@ -99,24 +97,22 @@ body {
   grid-area: question;
 }
 
-.linkedin {
-  grid-area: linkedin;
+#contact-methods {
+  grid-area: methods;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0;
 }
-
-.github {
-  grid-area: github;
-}
-
-.email {
-  grid-area: email;
-}
-
 #contact-methods {
   margin: 2rem 0;
 }
 
 .contact-link {
-  display: inline-flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
   align-items: center;
   justify-content: center;
   text-decoration: none;
@@ -143,6 +139,7 @@ body {
   background-color: rgba(255, 255, 255, 0.05);
   border-radius: 6px;
 }
+
 /* Media queries*/
 
   @media only screen and (max-width: 550px)
