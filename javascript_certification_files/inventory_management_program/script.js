@@ -14,7 +14,41 @@ If the product to remove is not present in the inventory, the removeProduct func
 
 let inventory = [];
 function findProductIndex(name) {
-  for (const prop in inventory) {
-    return prop === name ? prop[name] : -1;
+  for (let i = 0; i < inventory.length; i++) {
+    if (inventory[i].name.toLowerCase() === name.toLowerCase()) {
+      return i;
+    } 
+    }
+    return -1;
+  }
+
+function addProduct(product) {
+  let index = findProductIndex(product.name);
+  let productName = product.name.toLowerCase();
+  if (index !== -1) {
+    inventory[index].quantity += product.quantity;
+    console.log(`${productName} quantity updated`)
+  }
+  else {
+    inventory.push({ name: productName, quantity: product.quantity });
+    console.log(`${productName} added to inventory`);
+  }
+}
+
+function removeProduct(name, quantity) {
+  let index = findProductIndex(name);
+  let productName = name.toLowerCase();
+  if (index !== -1) {
+    if (inventory[index].quantity - quantity > 0) {
+    inventory[index].quantity -= quantity;
+    console.log(`Remaining ${productName} pieces: ${inventory[index].quantity}`)
+  } else if (inventory[index].quantity - quantity === 0) {
+    inventory.splice(index, 1)
+  } else {
+    console.log(`Not enough ${productName} available, remaining pieces: ${inventory[index].quantity}`)
+  }
+  
+  } else {
+    console.log(`${productName} not found`)
   }
 }
