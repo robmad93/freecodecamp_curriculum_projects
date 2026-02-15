@@ -24,7 +24,7 @@ themeDropdown.addEventListener("click", (e) => {
   if (e.target.tagName === "LI") {
     const themeName = e.target.textContent.toLowerCase();
     
-      // Find the matching theme object in your array
+      // Find the matching theme object in the array
     const selectedTheme = themes.find(t => t.name === themeName);
 
       if (selectedTheme) {
