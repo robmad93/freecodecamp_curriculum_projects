@@ -2,9 +2,9 @@ function translatePigLatin(str) {
   if (/^[aeiou]/i.test(str)) {
     return str + "way";
   }
-  const index = str.search(/[aeiou]/i)
-  if (index === -1) {
+  const firstVowelIndex = str.search(/[aeiou]/i)
+  if (firstVowelIndex === -1) {
     return str + "ay";
   }
-  return str.slice(index) + str.slice(0, index) + "ay";
+  return str.slice(firstVowelIndex) + str.slice(0, firstVowelIndex) + "ay";
 }
