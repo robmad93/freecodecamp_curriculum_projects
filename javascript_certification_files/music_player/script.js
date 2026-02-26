@@ -94,9 +94,39 @@ const playSong = id => {
     audio.currentTime = userData.songCurrentTime;
   }
   userData.currentSong = song;
-  playButton.classList.add("playing")
+  playButton.classList.add("playing");
   audio.play()
 }
+
+const pauseSong = () => {
+  userData.songCurrentTime = audio.currentTime;
+  playButton.classList.remove("playing");
+  audio.pause();
+}
+
+const getCurrentSongIndex = () => userData.songs.indexOf(userData.currentSong);
+
+function getNextSong() {
+  const currentIndex = getCurrentSongIndex();
+  return userData.songs[currentIndex + 1];
+}
+
 playButton.addEventListener("click", () => {
-  playSong(0);
+  if (userData.currentSong === null) {
+    playSong(userData.songs[0].id);
+  } else {
+    playSong(userData.currentSong.id);
+  }
 });
+
+const songs = document.querySelectorAll(".playlist-song");
+
+songs.forEach((song) => {
+  const id = song.getAttribute("id").slice(5);
+  const songBtn = song.querySelector("button");
+  songBtn.addEventListener("click", () => {
+      playSong(Number(id));
+  })
+})
+
+pauseButton.addEventListener("click", pauseSong);
